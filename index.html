@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMC_Advisor</title>
+</head>
+<body>
+    <div class="bmi-advisor-container">
+        <span class="title">
+            BMI Advisor
+        </span>
+        <div hidden class="hidden-overlay">
+            <span class="hidden-title">Please use BMI Calculator to generate plans based on your BMI scores.</span>
+        </div>
+        <div class="advisor-content-container">
+            <span class="bmi-status">Your BMI Status: Value</span>
+            <span class="bmi-plan-intro">
+                Your BMI value indicates that your weight is Value1. We recommend the following plans to Value2
+            </span>
+            <div class="advisor-plan-container">
+                <div class="plan-goal-container">
+                    <span class="plan-goal-title">BMI Goal</span>
+                    <img class="plan-goal-img" src="images/no_image.png" alt="" width="231px" height="231px">
+                </div>
+                <div class="plan-exercise-container">
+                    <span class="plan-exercise-title">Exercise Plan</span>
+                    <img class="plan-exercise-img" src="images/no_image.png" alt="" width="231px" height="231px">
+                </div>
+                <div class="plan-diet-container">
+                    <span class="plan-diet-title">Diet Plan</span>
+                    <img class="plan-diet-img" src="images/no_image.png" alt="" width="231px" height="231px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
