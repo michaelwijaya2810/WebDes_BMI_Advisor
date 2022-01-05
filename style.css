@@ -1,7 +1,14 @@
+@import url('');
 
+:root {
+    --purple: #7900FF;
+    --blue: #548CFF;
+    --green: #93FFD8;
+    --lightgreen: #CFFFDC;
+}
 
 body {
     margin: 0;
     padding: 0;
-    background: radial-gradient(#a429bc, );
+    background: var(--purple);
 }
