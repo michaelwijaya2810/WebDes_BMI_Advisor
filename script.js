@@ -4,7 +4,6 @@ function show() {
 
     if (pwrd.type === "password"){
         pwrd.type = "text";
-        pwrd.style.marginTop = "20px";
         icon.style.color = "#548CFF"
     }
     else{
