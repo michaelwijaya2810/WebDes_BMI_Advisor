@@ -15,8 +15,8 @@
                 <i class="fa fa-user" style="font-size: 25px;"></i>
 
                 <div class="gender">
-                    <input type="radio" name="select" id="male" checked>
-                    <input type="radio" name="select" id="female">
+                    <input type="radio" name="selected" id="male" value="Male" checked onclick="pickGender(this.value)">
+                    <input type="radio" name="selected" id="female" value="Female" onclick="pickGender(this.value)">
                       <label for="male" class="option male">
                         <div class="dot"></div>
                          <span>Male</span>
@@ -27,7 +27,7 @@
                       </label>
                    </div>
 
-                <input id="calender" type="text" placeholder="Date of Birth">
+                <input id="dob" type="text" placeholder="Date of Birth">
                 <i class="fa fa-calendar" style="font-size: 25px;"></i>
 
                 <input id="mail" type="text" placeholder="Email">
@@ -36,7 +36,7 @@
                 <input id="pass" type="password" placeholder="Password">
                 <i id="lock" class="fa fa-lock" style="font-size: 25px;" onclick="show()"></i>
 
-                <input type="submit" value="Sign Up">
+                <input type="submit" value="Sign Up" onclick="validateRegister()">
                 <a href="login.html">Already have account?</a>
             </form>
         </div>
