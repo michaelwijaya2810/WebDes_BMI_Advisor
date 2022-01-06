@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
 
 :root{
-    --purple: #7900FF;
     --blue: #548CFF;
     --darkblue: #2864db;
+    --darkerblue: #082a6e;
     --grey: #808080;
     --white: #fff;
 }
@@ -11,7 +11,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: var(--purple);
+    background: var(--darkerblue);
     height: 100vh;
     overflow: hidden;
     font-family: 'Noto Sans TC', sans-serif;
