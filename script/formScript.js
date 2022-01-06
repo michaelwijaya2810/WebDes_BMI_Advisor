@@ -1,4 +1,4 @@
-var selectedGender = "Male"
+var selectedGender = "Male";
 
 function show() {
     var password = document.getElementById('pass');
@@ -6,11 +6,11 @@ function show() {
 
     if (password.type === "password"){
         password.type = "text";
-        icon.style.color = "#548CFF"
+        icon.style.color = "#548CFF";
     }
     else{
-        password.type = "password"
-        icon.style.color = "#808080"
+        password.type = "password";
+        icon.style.color = "#808080";
     }
 }
 
@@ -21,12 +21,14 @@ function validateLogin() {
     if(username == ""){
         alert("Please insert your username");
     } else if(password == ""){
-        alert("Please insert your password")
+        alert("Please insert your password");
+    } else {
+        window.location.replace = "https://www.tutorialrepublic.com/";
     }
 }
 
 function pickGender(picked){
-    selectedGender = picked
+    selectedGender = picked;
 }
 
 function validateRegister() {

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+
+:root{
+    --blue: #548CFF;
+    --darkblue: #2864db;
+    --darkerblue: #082a6e;
+    --grey: #808080;
+    --white: #fff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--darkerblue);
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.container{
+    padding: 3rem;
+    display: grid;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.obj{
+    background: var(--white);
+    border: 1px solid var(--darkblue);
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin: 1rem;
+    display: grid;
+    text-align: center;
+}
+
+.header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+form input{
+    height: 50px;
+    width: 95%;
+    padding: 0 10px 0 10px;
+    border-radius: 3px;
+    background: var(--white);
+    border: 1px solid var(--grey);
+    font-size: 18px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+form input[type="submit"]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 130px;
+    height: 45px;
+    color: var(--white);
+    cursor: pointer;
+    line-height: 45px;
+    border-radius: 45px;
+    border-radius: 5px;
+    background: var(--blue);
+}
+
+form input[type="submit"]:hover{
+    background: var(--darkblue);
+}
+
+.title{
+    font-size: 16px;
+}
+
+.BMI{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.result{
+    font-size: 20px;
+    font-weight: bold;
+}
