@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>BMI Project</title>
+        <link rel="stylesheet" href="css/homeCss.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script/homeScript.js"></script>
+    </head>
+    <body onload="load();calculate()">
+        <div class="container">
+            <div class="grid">
+                <div class="obj">
+                    <div class="header">BMI Calculator</div>
+                    <form action="">
+                        <input id="wei" type="text" placeholder="Weight">
+        
+                        <input id="hei" type="text" placeholder="Height">
+    
+                        <input type="submit" value="Calculate" onclick="calculate()">
+                    </form>
+                </div>
+
+                <div class="obj">
+                    <div class="header">Result</div>
+                    <p class="title">BMI Value</p>
+                    <div class="BMI">0.00</div>
+                    <p class="title">Weight Status</p>
+                    <div class="result">Your bmi is normal</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
