@@ -35,7 +35,7 @@ function calculate(){
     var weight = document.getElementById("wei").value
     var height = document.getElementById("hei").value
 
-    let bmi = (weight/ Math.pow(height/100, 2));
+    let bmi = parseFloat((weight/ Math.pow(height/100, 2)).toFixed(2));
     
     updateAdvisorInfo(bmi);
 
