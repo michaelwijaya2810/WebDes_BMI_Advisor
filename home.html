@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>BMI Project</title>
+        <link rel="stylesheet" href="css/homeCss.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <script src="script/homeScript.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <span>BMI Advisor</span>
+            <li>
+                <a href="#calculator">BMI Calculator</a>
+                <a href="#history">History</a>
+                <a href="#advisor">Advisor</a>
+                <a href="login-page.html">Logout</a>
+            </li>
+        </div>
+        <div class="container">
+            <div class="grid">
+                <div class="obj">
+                    <div class="header" id="calculator">BMI Calculator</div>
+                    <form action="">
+                        <input id="wei" type="text" placeholder="Weight">
+        
+                        <input id="hei" type="text" placeholder="Height">
+    
+                        <input type="button" value="Calculate" onclick="calculate()">
+                    </form>
+                </div>
+
+                <div class="obj">
+                    <div class="header">Result</div>
+                    <p class="title">BMI Value</p>
+                    <div class="BMI">0.00</div>
+                    <p class="title">Weight Status</p>
+                    <div class="result">Your bmi is normal</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-history" id="history">
+            <h1 class="center">BMI HISTORY</h1>
+            <canvas id="historyChart"></canvas>
+        </div>
+        <div class="bmi-advisor-container" id="advisor">
+            <span class="title">
+                BMI Advisor
+            </span>
+            <div class="hidden-overlay">
+                <span class="hidden-title">Please use BMI Calculator to generate plans based on your BMI scores.</span>
+            </div>
+            <div class="advisor-content-container">
+                <span class="bmi-status">Your BMI Status: Value</span>
+                <span class="bmi-plan-intro">
+                    Your BMI value indicates that your weight is Value1. We recommend the following plans to Value2
+                </span>
+                <div class="advisor-plan-container">
+                    <div class="plan-goal-container">
+                        <span class="plan-goal-title">BMI Goal</span>
+                        <img class="plan-goal-img" src="images/no_image.png" alt="" width="231px" height="231px">
+                    </div>
+                    <div class="plan-exercise-container">
+                        <span class="plan-exercise-title">Exercise Plan</span>
+                        <img class="plan-exercise-img" src="images/no_image.png" alt="" width="231px" height="231px">
+                    </div>
+                    <div class="plan-diet-container">
+                        <span class="plan-diet-title">Diet Plan</span>
+                        <img class="plan-diet-img" src="images/no_image.png" alt="" width="231px" height="231px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        
+        <script src="script/homeScript.js"></script>
+    </body>
+</html>

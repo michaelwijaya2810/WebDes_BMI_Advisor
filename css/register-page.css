@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    /* height: 100%; */
+}
+
+.register-contents {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px 50px;
+    margin: 0;
+}
+
+.left-register, .right-register {
+    padding: 20px;
+}
+
+.left-register h1 {
+    font-size: xx-large;
+}
+
+.login-image {
+    border-radius: 8px;
+    max-width: 40vw;
+    max-height: 75vh;
+}
+
+.right-register {
+    background-color: #AAAABC;
+    color: white;
+    border-radius: 20px;
+}
+
+.right-register h2 {
+    margin-bottom: 15px;
+    font-size: x-large;
+}
+
+.btn-submit {
+    padding: 5px 50px;
+    border: none;
+    background-color: #082a6e;
+    color: white;
+    border-radius: 8px;
+    margin: 30px auto 15px auto;
+}
+
+/* -- Responsive -- */
+@media screen and (max-width: 720px) {
+    .register-contents, .right-register {
+        padding: 20px 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .register-contents, .right-register {
+        padding: 15px;
+    }
+}

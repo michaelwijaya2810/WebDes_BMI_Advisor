@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+
+:root{
+    --blue: #548CFF;
+    --darkblue: #2864db;
+    --darkerblue: #082a6e;
+    --grey: #808080;
+    --white: #fff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    height: 100vh;
+    /* overflow: hidden; */
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: var(--darkerblue);
+    color: white !important;
+    font-size: 20px;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white !important;
+    margin: 0px 20px;
+    padding: 5px;
+}
+
+.sticky-navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.container{
+    padding: 3rem;
+    display: grid;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.obj{
+    background: var(--white);
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px rgb(59, 59, 59);
+    padding: 1.5rem;
+    margin: 1rem;
+    display: grid;
+    text-align: center;
+}
+
+.header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+form input{
+    height: 50px;
+    width: 95%;
+    padding: 0 10px 0 10px;
+    border-radius: 3px;
+    background: var(--white);
+    border: 1px solid var(--grey);
+    font-size: 18px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+form input[type="submit"]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 130px;
+    height: 45px;
+    color: var(--white);
+    cursor: pointer;
+    line-height: 45px;
+    border-radius: 45px;
+    border-radius: 5px;
+    background: var(--blue);
+}
+
+form input[type="submit"]:hover{
+    background: var(--darkblue);
+}
+
+.title{
+    font-size: 16px;
+}
+
+.BMI{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.result{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container-history{
+    padding: 3rem;
+}
+
+.bmi-advisor-container{
+    padding: 3rem;
+    font-size: 16px;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.hidden-overlay{
+    visibility: visible;
+}
+
+.advisor-content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+    /* visibility: hidden; */
+}
+
+.bmi-status{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.advisor-plan-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px rgb(116, 116, 116);
+    margin: 20px;
+    width: 80%;
+}
+
+.plan-goal-container, .plan-exercise-container, .plan-diet-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.advisor-plan-container span{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
